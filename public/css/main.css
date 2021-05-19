@@ -1,0 +1,123 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+.page {
+	border: 0px solid #52ee6b;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	flex-wrap: wrap;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	height: 360px;
+	background-size: cover;
+}
+
+.logo_block {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+.navbar_big_screen {
+	margin-top: 90px;
+	height: 67px;
+	background: #141414;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.navbar_item:hover {
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+	border-bottom: 1px solid rgb(255, 255, 255);
+	padding-bottom: 5px;
+	border-bottom-width: 5px;
+	transition: 0.3s;
+}
+
+.navbar_item {
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.nav_list {
+	margin-top: 20px;
+}
+
+.nav_list li {
+	display: inline;
+	margin-left: 30px;
+}
+
+.content {
+	width: 100px;
+	height: 100px;
+	background: white;
+}
+
+.navbar_short_screen {
+	display: none;
+}
+
+@media(max-width:700px) {
+	.navbar_big_screen {
+		display: none;
+	}
+	.navbar_short_screen {
+		padding-left: 10px;
+		padding-right: 30px;
+		position: absolute;
+		display: block;
+		height: 300px;
+		width: 100%;
+		border: 1px solid white;
+		background: rgba(20, 20, 20, 0.9);
+		transform: translate(0, -130%);
+		transition: transform 1s;
+	}
+	.nav_list_short li {
+		margin-top: 20px;
+		margin-left: 30px;
+	}
+	.navbar_item_short {
+		color: white;
+		font-size: 20px;
+		text-decoration: none;
+	}
+	.nav_list_on {
+		transform: translate(0, 20%);
+		transition: transform .5s;
+	}
+	.buttonBars {
+		padding-left: 20px;
+		padding-top: 10px;
+		cursor: pointer;
+		display: inline-block;
+	}
+	.buttonBar1, .buttonBar2, .buttonBar3 {
+		width: 30px;
+		height: 2px;
+		background: rgb(255, 255, 255);
+		margin-top: 10px;
+		transition: 0.4s;
+	}
+	.change .buttonBar1 {
+		transform: rotate(-45deg) translate(-9px, 6px);
+	}
+	.change .buttonBar2 {
+		opacity: 0;
+	}
+	.change .buttonBar3 {
+		transform: rotate(45deg) translate(-8px, -8px);
+	}
+}

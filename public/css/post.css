@@ -1,0 +1,139 @@
+.posts_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.posts{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 60%;
+    padding-top:30px;
+    flex-wrap: wrap;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    border:0px solid black;
+}
+.post_row_90{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: center;
+    border: 0px solid black;
+}
+.post_column_100{
+    display: flex;
+    flex-direction: column;
+    width:90%;
+
+}
+.post_img{
+    width:100%;
+    
+}
+.post_text{
+    width:70%;
+    padding-right:20px;
+    color:rgb(143, 143, 143);
+}
+.post_text_one{
+    width:90%;
+    padding-right:20px;
+    color:rgb(105, 105, 105);
+}
+.post_button_block{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;  
+    border-top: 1px solid rgb(161, 161, 161);
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.post_button{
+    width:200px;
+    height:40px;
+    background: #ffa600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    padding-top:20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.post_button:hover{
+    width:200px;
+    height:40px;
+    background: rgb(116, 116, 116);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    padding-top:20px;
+    font-size: 18px;
+    transition: 0.4s;
+    font-weight: bold;
+}
+.post_button_admin{
+    width:200px;
+    height:50px;
+    background: #ffa600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    padding-top:10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.post_button_admin:hover{
+    width:200px;
+    height:50px;
+    background: rgb(116, 116, 116);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    padding-top:10px;
+    font-size: 18px;
+    transition: 0.4s;
+    font-weight: bold;
+}
+.post_button_admin_delete{
+    margin-left:20px;
+    width:200px;
+    height:50px;
+    background: #ff4010;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    padding-top:10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.post_button_admin_delete:hover{
+    margin-left:20px;
+    width:200px;
+    height:50px;
+    background: rgb(116, 116, 116);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    padding-top:10px;
+    font-size: 18px;
+    transition: 0.4s;
+    font-weight: bold;
+}
+
+@media(max-width: 900px) {
+    .posts{
+        width: 100%;
+    }
+}

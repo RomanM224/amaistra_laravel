@@ -1,0 +1,105 @@
+.bg-image {
+    background-color: #f7f8fa;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.page_contacts {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.title {
+    color: #484848;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title h1 {
+    padding: 30px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media(max-width: 700px) {
+    .services {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .contacts_service {
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .contacts_follow {
+        margin-right: 50px;
+    }
+}
+
+.services {
+    color: #484848;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    border:0px solid black;
+}
+
+.contacts_service {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon {
+    width: 25px;
+    display: inline;
+}
+
+.service {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.service_text {
+    margin-left: 10px;
+    display: inline;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+.contacts_follow {
+    display: flex;
+    margin-left: 50px;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: center;
+}
+
+.link_contacts {
+    width: 0px;
+}
+
+.link_contacts:hover {
+    opacity: .5;
+}
+
+.icon_follow_top {
+    margin-left: 70px;
+    margin-top: 10px;
+    width: 40px;
+}
+
+.icon_follow {
+    margin-left: 70px;
+    margin-top: 10px;
+    width: 40px;
+}
